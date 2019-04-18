@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jim Test Functions</title>
+</head>
+
+<body style="background-color:tan">
+
+<h1>Playing with Function Returns...</h1>
+
+<p>Might as well have some fun with this as we go...</p>
+
+<p id="hello"></p>
+
+<p>This first section is where I pass a number behind the scenes to get your "magic number"...</p>
+
+<p id="number"></p>	
+
+<p id="multi"></p>
+
+<p>
+
+	Here is where we pass the string 'Life is but a dream, sweetheart', and set it to uppercase through a function.....like so:</p>
+
+<p id="caps"></p>
+
+
+
+<!-- Interlude for picture and video -->
+
+<p>Just for a quick break, here is a fun pic and a video.</p>
+
+<p style="text-align: center">
+<img src="./motivated_fail.jpg" alt="Be motivated by failures" align="center">
+</p>
+
+<p></p>
+
+
+<p style="text-align: center">
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/7gphiFVVtUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</p>
+
+
+
+<!-- Let's do the JS thing -->
+
+	<script>
+
+// welcome function
+
+function HiThere(name) {
+
+	return "Hi There, " + name + "!";
+
+}
+
+// magic number function
+	
+	function MyNum(num1) {
+
+		return "Your hidden number was " + num1 + " , and your magic number is " + (num1 + 3);
+
+	}
+
+	
+// multiplication function
+	
+	function mult(num2, num3) {
+
+		return "Your multiplication is " + num2 + " x " + num3 + " = " + (num2 * num3);
+
+	}
+
+	function allcap(strang) {
+		return strang.toUpperCase();
+	}
+
+
+// output to user
+
+    document.getElementById("hello").innerHTML = HiThere("Jim");
+    document.getElementById("number").innerHTML = MyNum(4);
+	document.getElementById("multi").innerHTML = mult(2,3);
+	document.getElementById("caps").innerHTML = allcap("Life is but a dream, sweetheart");
+</script>
+
+</body>
+</html>
